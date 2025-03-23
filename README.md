@@ -27,26 +27,26 @@ Exemplo:
 ### Fragmentos React || *<> / </>*
 Componentes em react precisam retornar apenas um elemento JSX, então ao tentar retonar múltiplos, vai ocorrer um erro. Para arrumar isso, é necessário utilizar os *React Fragments* para "embrulhar" vários elementos JSX, como no exemplo a seguir:
 ```
-    return (
-        <>
-            <button className="square">X</button>
-            <button className="square">X</button>
-        </>
-    );
+return (
+    <>
+        <button className="square">X</button>
+        <button className="square">X</button>
+    </>
+);
 ```
 ### Dados através de propriedades || *Props*
 Quando um componente é utilizado diversas vezes porém necessita atualizar alguma propriedade sua, é possível passar propriedades ao chamar o componente.
 ```
-    function Square({ value }) {
-        return <button className="square">{value}</button>;
-    }
+function Square({ value }) {
+    return <button className="square">{value}</button>;
+}
 
-    // ...
-     <div className="board-row">
-        <Square value="1" />
-        <Square value="2" />
-        <Square value="3" />
-      </div>
+// ...
+ <div className="board-row">
+    <Square value="1" />
+    <Square value="2" />
+    <Square value="3" />
+  </div>
 ```
 ### Lembrar das alterações || *useState*
 O React possui uma função especial chamada *useState* que você chama nos componentes para que eles "se lembrem" de coisas. É necessário importa-lo no topo do arquivo para que seja utilizado.
