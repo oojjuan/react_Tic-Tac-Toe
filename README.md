@@ -15,6 +15,20 @@ Cria uma array com 9 espaços para guardar elementos, onde logo em seguida são 
 ### () => handleClick(0)
 As *Arrow functions* do JS são uma maneira alternativa de criar funções de maneira mais rápida e curta. 
 
+### const [a, b, c] = lines[];
+Lines é uma lista de 9 arrays onde cada uma possui 3 números. Com esse código, cada valor da constante vai assumir um valor das arrays, como no trecho a seguir:
+```
+const lines = [
+    [0, 1, 2],
+    [3, 4, 5],
+    // ...
+];
+
+// ...
+    const [a, b, c] = lines[0]
+```
+A = 0, B = 1, C = 2
+
 
 ## Métodos React / Outros métodos
 
@@ -46,7 +60,7 @@ function Square({ value }) {
     <Square value="1" />
     <Square value="2" />
     <Square value="3" />
-  </div>
+ </div>
 ```
 ### Lembrar das alterações || *useState*
 O React possui uma função especial chamada *useState* que você chama nos componentes para que eles "se lembrem" de coisas. É necessário importa-lo no topo do arquivo para que seja utilizado.
