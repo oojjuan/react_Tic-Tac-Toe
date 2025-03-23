@@ -7,6 +7,15 @@ Durante o projeto, foi utilizado alguns métodos e trechos de códigos, sendo a 
 ### export default function nomeDaFunção()
 O `export` faz com que a função possa ser acessada fora do arquivo em que foi criada, já o `default` avisa os outros arquivos que estão acessando essa função que ela é a função principal (main) do arquivo.
 
+### (Array(9).fill(null));
+Cria uma array com 9 espaços para guardar elementos, onde logo em seguida são preenchidos com `null`, utilizando o comando `.fill(null)`.
+
+**OBS: O contexto do código é que ele foi utilizado em um useState, então é por isso que possui parenteses no início e no fim.**
+
+### () => handleClick(0)
+As *Arrow functions* do JS são uma maneira alternativa de criar funções de maneira mais rápida e curta. 
+
+
 ## Métodos React / Outros métodos
 
 ### Elemento JSX
