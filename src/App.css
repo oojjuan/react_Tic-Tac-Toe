@@ -1,10 +1,23 @@
 .square {
-  padding: 15px;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  
+  margin-top: -1px;
+  margin-right: -1px;
+
   font-weight: bold;
-  font-size: 26px;
+  font-size: 36px;
+  float: left;
 
   background-color: transparent;
-  border: 1px solid black;
+  border: 1px solid grey;
 
   cursor: pointer;
+}
+
+.board-row:after {
+  clear: both;
+  content: '';
+  display: table;
 }
