@@ -39,3 +39,13 @@ Quando um componente é utilizado diversas vezes porém necessita atualizar algu
         <Square value="3" />
       </div>
 ```
+### Lembrar das alterações || *useState*
+O React possui uma função especial chamada *useState* que você chama nos componentes para que eles "se lembrem" de coisas. É necessário importa-lo no topo do arquivo para que seja utilizado.
+```
+import { useState } from 'react';
+```
+E para utilizar o useState, é feito o código a seguir:
+```
+const [value, setValue] = useState(null);
+```
+o `value` armazena o valor, enquanto o `setValue` é uma função utilizada para alterar o valor. Dentro dos parenteses do useState, é passado o valor inicial da variável `value`, que nesse caso é `null`.
