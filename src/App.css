@@ -21,3 +21,17 @@
   content: '';
   display: table;
 }
+
+.status {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-info {
+  margin-left: 20px;
+}
